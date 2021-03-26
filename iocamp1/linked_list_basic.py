@@ -51,10 +51,10 @@ class LinkedList():
 		if toDelete is None:
 			return
 		if toDelete == self.head:
-			toDelete = toDelete.next
+			self.head = toDelete.next
 		if toDelete == self.tail:
 			self.tail = prev
-		if toDelete is not None:
+		if prev is not None:
 			prev.next = toDelete.next
 
 	def delete_node_noprev(self, toDelete):
@@ -101,6 +101,7 @@ node4.next = node5
 node5.next = node6
 node6.next = node7
 list_data.print_link_list()
-list_data.delete_node_noprev(node3)
+list_data.delete_node(node1, None)
+#list_data.delete_node_noprev(node3)
 list_data.print_link_list()
 #get_even_odd(list_data)
