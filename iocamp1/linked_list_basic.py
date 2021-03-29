@@ -64,6 +64,15 @@ class LinkedList():
 		toDelete.set_data(next.get_data())
 		self.delete_node(next, toDelete)
 
+	def delete_nth_node(self, n):
+		temp = self.head
+		count = 0
+		while temp is not None:
+			count += 1
+			if count == n:
+				self.delete_node_noprev(temp)
+			temp = temp.next
+
 def get_even_odd(input_list):
 	odd = LinkedList()
 	even = LinkedList()
@@ -85,13 +94,15 @@ def get_even_odd(input_list):
 	odd.print_link_list()
 	return even, odd
 
-node1 = Node(1)
-node2 = Node(2)
-node3 = Node(3)
-node4 = Node(4)
-node5 = Node(5)
-node6 = Node(6)
-node7 = Node(7)
+
+
+node1 = Node(100)
+node2 = Node(200)
+node3 = Node(300)
+node4 = Node(400)
+node5 = Node(500)
+node6 = Node(600)
+node7 = Node(700)
 list_data = LinkedList()
 list_data.head = node1
 node1.next = node2
@@ -101,7 +112,9 @@ node4.next = node5
 node5.next = node6
 node6.next = node7
 list_data.print_link_list()
-list_data.delete_node(node1, None)
+#list_data.delete_node(node1, None)
 #list_data.delete_node_noprev(node3)
+print("=================")
+list_data.delete_nth_node(5)
 list_data.print_link_list()
 #get_even_odd(list_data)
