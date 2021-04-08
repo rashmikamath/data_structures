@@ -10,7 +10,8 @@ def rotate_array_90(arr):
 		r2 = size-r1-1
 		c2 = size-r1-1
 		for jx in range(1, (c2-c1)+1):
-			perform_move(arr, r1, c1, r2, c2, jx)	
+			perform_move(arr, r1, c1, r2, c2, jx)
+			
 	return arr
 
 def perform_move(arr, r1, c1, r2, c2, offset):

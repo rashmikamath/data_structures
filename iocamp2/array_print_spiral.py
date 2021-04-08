@@ -1,7 +1,7 @@
 def print_spiral(arr):
 	if len(arr)==0 or arr==None 
 
-	for i in range(len(arr)//2):
+	for i in range(0,len(arr)//2):
 		print_layer(arr, 0, len(arr)-1-layer, len(arr)-1-layer)
 
 def print_layer(arr, layer, lastrow, lastcol):
