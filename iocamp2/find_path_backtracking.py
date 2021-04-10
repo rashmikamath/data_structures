@@ -22,4 +22,4 @@ def path_exist(arr, i, j, memo):
 def oob(i,j):
 	return i<0 or i>=5 or j<0 or j >=5
 
-print(path_exist([[0,1,0,0,0],[0,1,0,1,0],[0,1,1,1,0],[0,1,0,1,0],[0,0,0,1,0]], 0, 0 ,memo))
+print(path_exist([[0,1,0,0,0],[0,1,0,1,0],[0,1,0,1,0],[0,1,0,1,0],[0,0,0,1,0]], 0, 0 ,memo))
