@@ -18,8 +18,18 @@ def dfs(grid, i, j):
 	dfs(grid, i, j-1)
 	dfs(grid, i+1, j)
 	dfs(grid, i-1, j)
+	dfs(grid, i-1, j-1)
+	dfs(grid, i-1, j+1)
+	dfs(grid, i+1, j-1)
+	dfs(grid, i+1, j+1)
 
 def oob(grid, i, j):
 	return i<0 or i>=len(grid) or j < 0 or j>=len(grid[0])
 
-number_of_island([[1,1,1,1,1,1,1,0],[1,0,0,0,0,1,1,0],[1,0,1,0,1,1,1,0],[1,0,0,0,0,1,0,1],[1,1,1,1,1,1,1,0]])
+val = number_of_island([
+  ["1","1","0","0","0"],
+  ["1","1","0","0","0"],
+  ["0","0","1","0","0"],
+  ["0","0","0","1","1"]
+])
+print(val)
