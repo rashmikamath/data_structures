@@ -1,0 +1,25 @@
+from pathlib import Path
+home_path = str(Path.home())
+config_dict = {"Input_File":home_path + "/mycontainer/piyush-dev/Nivea/Monthly/Daily/Monthly.csv",
+"Target_Variable":"QUANTITY",
+"Date_Variable":"INVOICE_DATE",
+"Validation_Period":3,
+"Validation_Divisions":4,
+"Prediction_Period":3,
+"Category_Variable":["Depot","Used BGR","SPGR","Used_channel"],
+"Test_Period":3,
+"Evaluation_Parameter":"Accuracy",
+"lag_a":3,
+"lag_b" : 0,
+"feature_lag_a" : [1,2,3],
+"feature_lag_b" : [2,3],
+"cols_to_shift_lag_a" : ['num_ba', 'ba_sales', 'mt_offtake'],
+"cols_to_shift_lag_b" : [], 
+"feature_columns_lag_a" : ['TLSD','promo_qty','ECO'],
+"feature_columns_lag_b" : ["QUANTITY"],
+"transform_global" : 'no',
+"df_best_path" : home_path + '/mycontainer/Training_output',
+"importance_flag" : 1,
+"importance_path" : home_path + '/mycontainer/Feature_Importance_output',
+"forecast_path" : home_path + '/mycontainer/Forecast_output'
+}
