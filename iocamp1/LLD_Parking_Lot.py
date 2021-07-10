@@ -75,6 +75,7 @@ class SlotNumberError(Exception):
 	pass
 class SlotNotFree(Exception):
 	pass
+	
 p = ParkingLot()
 p.parking_lot(130)
 print(p.get_slot(10))
