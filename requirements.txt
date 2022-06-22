@@ -2,7 +2,7 @@ optuna==1.4.0
 xgboost==1.0.2
 joblib==0.14.1
 pandas==1.0.3
-numpy==1.18.4
+numpy==1.22.0
 lightgbm==2.3.1
 tqdm==4.46.0
 scikit_learn==0.23.0
