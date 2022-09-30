@@ -1,6 +1,6 @@
 optuna==1.4.0
 xgboost==1.0.2
-joblib==0.14.1
+joblib==1.2.0
 pandas==1.0.3
 numpy==1.18.4
 lightgbm==2.3.1
